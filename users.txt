@@ -1,0 +1,15 @@
+read -p "Enter file name : " filename
+echo "Please wait checking if $filename exists ..."
+
+if [ -f "${filename}" ]
+
+then
+
+        echo "File $filename exist."
+        
+
+else
+
+        echo "$0: $filename not found."
+
+fi
